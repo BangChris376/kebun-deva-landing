@@ -68,23 +68,23 @@ const Footer = () => {
             <h4 className="font-display font-bold text-lg mb-4">Produk</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-tropical-orange transition-colors">
-                  Mangga
+                <a href="#products" className="text-primary-foreground/70 hover:text-tropical-orange transition-colors">
+                  Alpukat
                 </a>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-tropical-orange transition-colors">
+                <a href="#products" className="text-primary-foreground/70 hover:text-tropical-orange transition-colors">
                   Durian
                 </a>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-tropical-orange transition-colors">
-                  Manggis
+                <a href="#products" className="text-primary-foreground/70 hover:text-tropical-orange transition-colors">
+                  Pisang
                 </a>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-tropical-orange transition-colors">
-                  Buah Tropis Lainnya
+                <a href="#products" className="text-primary-foreground/70 hover:text-tropical-orange transition-colors">
+                  Buah Lainnya
                 </a>
               </li>
             </ul>
