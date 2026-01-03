@@ -60,7 +60,7 @@ const ContactSection = () => {
             <div className="bg-primary-foreground/10 rounded-2xl p-6 backdrop-blur-sm">
               <MapPin className="mx-auto mb-4 opacity-80" size={28} />
               <h3 className="font-semibold mb-2">Lokasi</h3>
-              <p className="text-primary-foreground/80">Jakarta, Indonesia</p>
+              <p className="text-primary-foreground/80">Kebondalem, Jambu, Semarang, Jateng</p>
             </div>
           </div>
         </div>
