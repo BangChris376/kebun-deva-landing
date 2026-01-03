@@ -15,59 +15,69 @@ const products: Product[] = [
     name: 'Alpukat Mentega',
     category: 'Alpukat',
     emoji: '🥑',
-    minOrder: '100 kg',
+    minOrder: '10 kg',
   },
   {
     name: 'Kopi Arabika',
     category: 'Kopi',
     emoji: '☕',
-    minOrder: '50 kg',
+    minOrder: '5 kg',
   },
   {
     name: 'Pete Super',
     category: 'Pete',
     emoji: '🫛',
-    minOrder: '50 kg',
+    minOrder: '5 kg',
   },
   {
     name: 'Nangka Madu',
     category: 'Nangka',
     emoji: '🍈',
-    minOrder: '100 kg',
+    minOrder: '10 kg',
   },
   {
     name: 'Durian Montong',
     category: 'Durian',
     image: durianIcon,
-    minOrder: '50 kg',
+    minOrder: '5 kg',
   },
   {
     name: 'Salak Pondoh',
     category: 'Salak',
     image: salakIcon,
-    minOrder: '100 kg',
+    minOrder: '10 kg',
   },
   {
     name: 'Rambutan Binjai',
     category: 'Rambutan',
     emoji: '🍒',
-    minOrder: '100 kg',
+    minOrder: '10 kg',
   },
   {
     name: 'Pisang Cavendish',
     category: 'Pisang',
     emoji: '🍌',
-    minOrder: '100 kg',
+    minOrder: '10 kg',
   },
   {
     name: 'Jeruk Bali',
     category: 'Jeruk Bali',
     emoji: '🍊',
-    minOrder: '100 kg',
+    minOrder: '10 kg',
   },
 ];
 
 const ProductsSection = () => {
+
+  const phoneNumber = "6281390468670";
+
+ 
+  const getWhatsAppLink = (productName: string) => {
+    const message = `Halo! Admin KebunDeva! saya tertarik dengan ${productName}, bolehkah saya mengetahui harga dan penawaran nya?`;
+  
+    return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  };
+
   return (
     <section id="products" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -115,8 +125,15 @@ const ProductsSection = () => {
                 </div>
               </div>
               <div className="mt-4 pt-4 border-t border-border">
-                <Button variant="ghost" className="w-full text-primary hover:bg-primary/5">
-                  Minta Penawaran →
+               
+                <Button asChild variant="ghost" className="w-full text-primary hover:bg-primary/5 cursor-pointer">
+                  <a 
+                    href={getWhatsAppLink(product.name)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Minta Penawaran →
+                  </a>
                 </Button>
               </div>
             </div>

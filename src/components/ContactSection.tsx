@@ -35,7 +35,7 @@ const ContactSection = () => {
             <Button
               variant="outline"
               size="xl"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+              className=" border-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/30 hover:text-primary-foreground"
               asChild
             >
               <a href="mailto:netdeva12@gmail.com">

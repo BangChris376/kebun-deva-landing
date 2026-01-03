@@ -2,6 +2,15 @@ import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-fruits.jpg';
 
 const HeroSection = () => {
+  // Nomor WhatsApp Admin
+  const phoneNumber = "6281390468670";
+
+  // Kalimat pesan yang sudah di-improve (Lebih profesional)
+  const message = "Halo Admin Kebun Deva, saya tertarik untuk menjalin kemitraan/kerjasama bisnis distribusi buah. Boleh minta informasi lebih lanjut mengenai katalog dan syarat ketentuannya?";
+  
+  // URL WhatsApp
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background Image */}
@@ -31,12 +40,24 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4" style={{ animationDelay: '0.5s' }}>
-            <Button variant="hero" size="xl">
-              Mulai Bermitra
+            
+            {/* Tombol Bermitra (Diperbarui) */}
+            <Button asChild variant="hero" size="xl">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mulai Bermitra
+              </a>
             </Button>
-            <Button variant="outline-forest" size="xl">
-              Lihat Katalog
+            
+            <Button asChild variant="outline" size="xl" className="border-forest text-forest hover:bg-forest/10">
+              <a href="#products">
+                Lihat Katalog
+              </a>
             </Button>
+
           </div>
 
           {/* Trust badges */}
