@@ -2,21 +2,39 @@ import { Button } from '@/components/ui/button';
 
 const products = [
   {
-    name: 'Mangga Harum Manis',
-    category: 'Mangga',
-    emoji: '🥭',
+    name: 'Alpukat Mentega',
+    category: 'Alpukat',
+    emoji: '🥑',
+    minOrder: '100 kg',
+  },
+  {
+    name: 'Kopi Arabika',
+    category: 'Kopi',
+    emoji: '☕',
+    minOrder: '50 kg',
+  },
+  {
+    name: 'Pete Super',
+    category: 'Pete',
+    emoji: '🫛',
+    minOrder: '50 kg',
+  },
+  {
+    name: 'Nangka Madu',
+    category: 'Nangka',
+    emoji: '🍈',
     minOrder: '100 kg',
   },
   {
     name: 'Durian Montong',
     category: 'Durian',
-    emoji: '🌴',
+    emoji: '🍃',
     minOrder: '50 kg',
   },
   {
-    name: 'Manggis Super',
-    category: 'Manggis',
-    emoji: '🍇',
+    name: 'Salak Pondoh',
+    category: 'Salak',
+    emoji: '🥥',
     minOrder: '100 kg',
   },
   {
@@ -26,16 +44,16 @@ const products = [
     minOrder: '100 kg',
   },
   {
-    name: 'Salak Pondoh',
-    category: 'Salak',
-    emoji: '🥥',
+    name: 'Pisang Cavendish',
+    category: 'Pisang',
+    emoji: '🍌',
     minOrder: '100 kg',
   },
   {
-    name: 'Buah Naga Merah',
-    category: 'Buah Naga',
-    emoji: '🐉',
-    minOrder: '50 kg',
+    name: 'Jeruk Bali',
+    category: 'Jeruk Bali',
+    emoji: '🍊',
+    minOrder: '100 kg',
   },
 ];
 
