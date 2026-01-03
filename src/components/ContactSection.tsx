@@ -17,17 +17,31 @@ const ContactSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button variant="tropical" size="xl" className="gap-2">
-              <Phone size={20} />
-              Hubungi Kami
+            <Button
+              variant="tropical"
+              size="xl"
+              className="gap-2"
+              asChild
+            >
+              <a
+                href="https://wa.me/6281390468670?text=Halo!%20saya%20ingin%20memesan%20%5Btuliskan%20keperluan%5D%2C%20apakah%20bisa%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Phone size={20} />
+                Hubungi Kami
+              </a>
             </Button>
             <Button
               variant="outline"
               size="xl"
               className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+              asChild
             >
-              <Mail size={20} className="mr-2" />
-              Kirim Email
+              <a href="mailto:netdeva12@gmail.com">
+                <Mail size={20} className="mr-2" />
+                Kirim Email
+              </a>
             </Button>
           </div>
 
@@ -36,12 +50,12 @@ const ContactSection = () => {
             <div className="bg-primary-foreground/10 rounded-2xl p-6 backdrop-blur-sm">
               <Phone className="mx-auto mb-4 opacity-80" size={28} />
               <h3 className="font-semibold mb-2">Telepon</h3>
-              <p className="text-primary-foreground/80">+62 812 3456 7890</p>
+              <p className="text-primary-foreground/80">+62 813-9046-8670</p>
             </div>
             <div className="bg-primary-foreground/10 rounded-2xl p-6 backdrop-blur-sm">
               <Mail className="mx-auto mb-4 opacity-80" size={28} />
               <h3 className="font-semibold mb-2">Email</h3>
-              <p className="text-primary-foreground/80">wholesale@kebundeva.id</p>
+              <p className="text-primary-foreground/80">netdeva12@gmail.com</p>
             </div>
             <div className="bg-primary-foreground/10 rounded-2xl p-6 backdrop-blur-sm">
               <MapPin className="mx-auto mb-4 opacity-80" size={28} />
