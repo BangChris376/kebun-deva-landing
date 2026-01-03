@@ -1,6 +1,16 @@
 import { Button } from '@/components/ui/button';
+import durianIcon from '@/assets/durian-icon.png';
+import salakIcon from '@/assets/salak-icon.png';
 
-const products = [
+type Product = {
+  name: string;
+  category: string;
+  emoji?: string;
+  image?: string;
+  minOrder: string;
+};
+
+const products: Product[] = [
   {
     name: 'Alpukat Mentega',
     category: 'Alpukat',
@@ -28,13 +38,13 @@ const products = [
   {
     name: 'Durian Montong',
     category: 'Durian',
-    emoji: '🍃',
+    image: durianIcon,
     minOrder: '50 kg',
   },
   {
     name: 'Salak Pondoh',
     category: 'Salak',
-    emoji: '🥥',
+    image: salakIcon,
     minOrder: '100 kg',
   },
   {
@@ -80,9 +90,18 @@ const ProductsSection = () => {
               className="group relative bg-card rounded-2xl p-6 border border-border hover:border-primary/30 shadow-soft hover:shadow-card transition-all duration-300"
             >
               <div className="flex items-start gap-4">
-                <div className="text-5xl animate-float" style={{ animationDelay: `${index * 0.2}s` }}>
-                  {product.emoji}
-                </div>
+                {product.image ? (
+                  <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    className="w-14 h-14 object-contain animate-float"
+                    style={{ animationDelay: `${index * 0.2}s` }}
+                  />
+                ) : (
+                  <div className="text-5xl animate-float" style={{ animationDelay: `${index * 0.2}s` }}>
+                    {product.emoji}
+                  </div>
+                )}
                 <div className="flex-1">
                   <span className="text-xs font-semibold text-tropical-orange uppercase tracking-wider">
                     {product.category}
