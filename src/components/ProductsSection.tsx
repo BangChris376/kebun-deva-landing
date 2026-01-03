@@ -122,12 +122,6 @@ const ProductsSection = () => {
             </div>
           ))}
         </div>
-
-        <div className="text-center mt-12">
-          <Button variant="tropical" size="lg">
-            Lihat Semua Produk
-          </Button>
-        </div>
       </div>
     </section>
   );
