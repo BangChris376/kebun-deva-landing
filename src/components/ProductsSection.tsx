@@ -36,7 +36,7 @@ const products: Product[] = [
     minOrder: '10 kg',
   },
   {
-    name: 'Durian',
+    name: 'Durian ',
     category: 'Durian',
     image: durianIcon,
     minOrder: '5 kg',
