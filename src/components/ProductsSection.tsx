@@ -12,49 +12,49 @@ type Product = {
 
 const products: Product[] = [
   {
-    name: 'Alpukat Mentega',
+    name: 'Alpukat',
     category: 'Alpukat',
     emoji: '🥑',
     minOrder: '10 kg',
   },
   {
-    name: 'Kopi Arabika',
+    name: 'Kopi',
     category: 'Kopi',
     emoji: '☕',
     minOrder: '5 kg',
   },
   {
-    name: 'Pete Super',
+    name: 'Pete',
     category: 'Pete',
     emoji: '🫛',
     minOrder: '5 kg',
   },
   {
-    name: 'Nangka Madu',
+    name: 'Nangka',
     category: 'Nangka',
     emoji: '🍈',
     minOrder: '10 kg',
   },
   {
-    name: 'Durian Montong',
+    name: 'Durian',
     category: 'Durian',
     image: durianIcon,
     minOrder: '5 kg',
   },
   {
-    name: 'Salak Pondoh',
+    name: 'Salak',
     category: 'Salak',
     image: salakIcon,
     minOrder: '10 kg',
   },
   {
-    name: 'Rambutan Binjai',
+    name: 'Rambutan',
     category: 'Rambutan',
     emoji: '🍒',
     minOrder: '10 kg',
   },
   {
-    name: 'Pisang Cavendish',
+    name: 'Pisang',
     category: 'Pisang',
     emoji: '🍌',
     minOrder: '10 kg',
